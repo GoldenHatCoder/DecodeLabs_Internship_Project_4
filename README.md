@@ -261,43 +261,6 @@ The executable will be placed in:
 dist\SystemVulnerabilityAuditor.exe
 ```
 
-## GitHub
-
-Recommended repository structure:
-
-```text
-system-vulnerability-auditor/
-├── app.py
-├── README.md
-├── SECURITY.md
-├── LINKEDIN.md
-├── report-template.md
-├── .gitignore
-└── reports/              # generated locally; ignored by Git
-```
-
-Initialize Git:
-
-```powershell
-git init
-git add .
-git commit -m "Build System Vulnerability Auditor v3"
-git branch -M main
-```
-
-Create an empty GitHub repository and connect it:
-
-```powershell
-git remote add origin https://github.com/YOUR-USERNAME/system-vulnerability-auditor.git
-git push -u origin main
-```
-
-Replace `YOUR-USERNAME` with your GitHub username.
-
-## Suggested GitHub description
-
-> A Windows-first defensive cybersecurity auditing tool that performs real read-only security checks, prioritizes findings, provides endpoint inventory, compares scans, and exports evidence-rich security reports.
-
 ## Privacy and safe use
 
 Use the application only on systems you own or are explicitly authorized to assess.
@@ -341,10 +304,6 @@ The application deliberately avoids pretending it can prove things it cannot dir
 - [x] Findings, severity and priority
 - [x] Search and filtering
 - [x] Endpoint/network inventory
-- [x] Remediation guidance
 - [x] Re-scan and before/after comparison
 - [x] Evidence-rich HTML report
 - [x] Markdown, JSON and CSV exports
-- [x] GitHub-ready documentation
-- [x] No logo
-- [x] Project credit: M Luqman Shoaib
